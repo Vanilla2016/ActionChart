@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ActionChartServlet</servlet-name>
+  	<display-name>ActionChartServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.gamebooks.lonewolf.servlet.ActionChartServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CalculationServlet</servlet-name>
+  	<display-name>CalculationServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.gamebooks.lonewolf.servlet.CalculationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ActionChartServlet</servlet-name>
+  	<url-pattern>/ActionChartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CalculationServlet</servlet-name>
+  	<url-pattern>/CalculationServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
