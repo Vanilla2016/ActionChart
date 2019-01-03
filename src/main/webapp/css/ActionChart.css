@@ -1,0 +1,189 @@
+@CHARSET "ISO-8859-1";
+<style type="text/css">
+	
+	.randomNumber {
+		border="0";
+		background-color: red;
+	}
+	.cellContent {
+		align: middle;
+		valign: top;
+	}
+	.vitalStatBoxes {
+		display: table-cell;
+		width: 25%;
+		height: 25px;
+		background-color: red;
+	}
+	.vitalStatBoxesInput {
+		position: relative;
+		height: 35px;
+		align: middle;
+		content: 'Hello';
+	}
+	.combatRecords {
+		width: 33%;
+	}
+	.combatControl {
+		height: 18px;
+		width: 45px;
+	}
+	.combatRecordInput {
+		height: 18px;
+		
+	}
+	.rTable{
+		display: table;
+		width: 100%;
+		height: 30px;
+	  	border: 1px solid #999999;
+	  	
+	}
+	.rTableHeading {
+	  	display: table-header-group;
+	  	background-color: #ddd;
+	}
+	.rTableRow {
+  		display: table-row;
+	}
+	.rTableCell, .rTableHead {
+	  	display: table-cell;
+  		text-align: center;
+	  	padding: 3px 10px;
+	  	width: 50%;
+	  	border: 4;
+	}
+	.rTableRandomNumber{
+		display: table;
+		width: 550px;
+		border: 1px solid #999999;
+		background-color: red;
+	}
+	.rTableVitalStats{
+		display: table;
+		width: 550px;
+		border: 1px solid #999999;
+		
+	}
+	.rTableCombatRecords{
+		padding: 3px 10px;
+		display: table;
+		width: 550px;
+		border: 4px;
+		
+		background-image: url("../images/heads.gif");
+		background-repeat: no-repeat;
+		background-position: bottom, left;
+	}
+	.rTableRollNewCharacter{
+		position: absolute;
+		display: table;
+		top: 55px;
+		left: 580px;
+		width: 550px;
+		height: 20px;
+		border: 8px;
+		
+	}
+	.rTableKaiTrainingLevel{
+		position: absolute;
+		display: table;
+		top: 85px;
+		left: 580px;
+		width: 550px;
+		height: 20px;
+		border: 8px;
+		
+	}
+	.rTableGoldCrowns{
+		position: absolute;
+		display: table;
+		top: 140px;
+		left: 580px;
+		height: 25px;
+		width: 550px;
+		border: 4px thick white;
+		
+	}
+	.goldCrowns{
+		height: 25px;
+		width: 25px;
+		background-image: url("../images/gold_crown.jpg"); 
+		background-repeat: repeat-x;
+	}
+	.rTableWeapoms{
+		position: absolute;
+		display: table;
+		top: 170px;
+		left: 580px;
+		height: 30px;
+		width: 550px;
+		border: 4px;
+		
+		visibility: hidden;
+	}
+	.rTableBackpackItems{
+		position: absolute;
+		display: table;
+		top: 210px;
+		left: 600px;
+		height: 300px;
+		width: 550px;
+		border: 4px;
+		
+	}
+	.rTableSpecialItems{
+		position: absolute;
+		display: table;
+		top: 540px;
+		left: 580px;
+		height: 300px;
+		width: 550px;
+		border: 4px;
+		
+	}
+	.rInputText{
+		height: 100%;
+	}
+	.randomNumberButton{
+	}
+	.randomNumberOutput{
+		align: middle;
+		width: 20%;	
+		z-index: 100;
+		background-color: red;
+	}
+	.updateButton{
+		height: 20px;
+		width: 20px;
+	}
+	.titleImage {
+		position: relative;
+		left: 10px;
+		width: 550px;
+		height: 100px;
+		border: 1px dotted gray;	
+		background-image: url("../images/title1.png");
+		
+	}
+	#nextChapter{
+		position: absolute;
+		top: 73px;
+		left: 525px;
+		width: 25px;
+		height: 25px;
+		font: italic bold 12px/15px Georgia, serif;
+		color: #ffb366;
+		text-shadow: 2px 2px #ac7339;
+		z-index: 1;	
+	}
+	#kaiDisciplines{
+		position: relative;
+		top: 10px;
+		left: 10px;
+		align: middle;
+		width: 550px;
+		height: 180px;
+	}
+	
+</style>

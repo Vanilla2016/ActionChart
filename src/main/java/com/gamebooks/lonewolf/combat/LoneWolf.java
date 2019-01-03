@@ -1,31 +1,28 @@
 package com.gamebooks.lonewolf.combat;
 
-public class LoneWolf implements Combatant {
+public class LoneWolf extends GenericCombatant {
 
-	private int combatSkill;
-	private int endurancePoints;
+	private final String TITLE = "Lone Wolf";
 	
-	public LoneWolf(int combatSkill, int endurancePoints) {
-		super();
-		this.combatSkill = combatSkill;
-		this.endurancePoints = endurancePoints;
-	}
-
-	public void setCombatSkill(int combatSkill) {
-		this.combatSkill = combatSkill;
-	}
-
-	public void setEndurancePoints(int endurancePoints) {
-		this.endurancePoints = endurancePoints;
-	}
-
 	@Override
-	public int getCombatSkill() {
-		return combatSkill;
+	public String getTitle() {
+		return TITLE;
 	}
 
-	@Override
-	public int getEndurancePoints() {
-		return endurancePoints;
+	private int goldCrowns;
+	
+	public LoneWolf(int combatSkill, int endurancePoints, int goldCrowns) {
+		super(combatSkill, endurancePoints);
+		this.goldCrowns = goldCrowns;
 	}
+	
+	public int getGoldCrowns() {
+		return goldCrowns;
+	}
+
+	public void setGoldCrowns(int goldCrowns) {
+		this.goldCrowns = goldCrowns;
+	}
+
+	
 }

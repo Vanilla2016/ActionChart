@@ -4,24 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-  	<servlet-name>ActionChartServlet</servlet-name>
-  	<display-name>ActionChartServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.gamebooks.lonewolf.servlet.ActionChartServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>CalculationServlet</servlet-name>
-  	<display-name>CalculationServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.gamebooks.lonewolf.servlet.CalculationServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>ActionChartServlet</servlet-name>
-  	<url-pattern>/ActionChartServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>CalculationServlet</servlet-name>
-  	<url-pattern>/CalculationServlet</url-pattern>
-  </servlet-mapping>
+ 
+  
+  	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>
